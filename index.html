@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AGSSP</title>
+
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./resources/thinking.webp">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Advancing Metallic Surface Defect Detection via Anomaly-Guided Pretraining on a Large Industrial Dataset </h1>
+          <div class="is-size-5 publication-authors">
+            <!-- 
+            <span class="author-block">
+              <span><a href="#">Hardy Chen</a></span><sup>2*</sup>,</span>
+            
+            <span class="author-block">
+              <span><a href="https://www.haqtu.me/">Haoqin Tu</a></span><sup>1*</sup>,</span>
+    
+            <span class="author-block">
+              <span><a href="https://fairyfali.github.io/">Fali Wang</a></span><sup>4</sup>,</span>
+            </span>
+            <span class="author-block">
+              <span><a href="https://layneins.github.io/">Hui Liu</a></span><sup>3</sup>,</span>
+            </span>
+
+            <span class="author-block">
+              <span><a href="https://xta.ng/">Xianfeng Tang</a></span><sup>3</sup>,</span>
+            </span>
+            
+            <span class="author-block">
+              <span><a href="https://xinyadu.github.io/">Xinya Du</a></span><sup>2</sup>,</span>
+            </span>
+
+            <span class="author-block">
+              <span><a href="https://yuyinzhou.github.io/">Yuyin Zhou</a></span><sup>1</sup>,</span>
+            </span>
+            <span class="author-block">
+              <span><a href="https://cihangxie.github.io/">Cihang Xie</a></span><sup>1</sup></span>
+            </span>
+            -->
+          </div>
+          <br/>
+          <!-- 
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>UC Santa Cruz,</span>
+            <span class="author-block"><sup>2</sup>UT Dallas,</span>
+            <span class="author-block"><sup>3</sup>Amazon Research,</span>
+            <span class="author-block"><sup>4</sup>The Pennsylvania State University</span> 
+          </div> -->
+
+          <div class="column has-text-centered">
+
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2504.11468" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fa-solidassasas fa-face-smiling-hands"></i>
+                    <img src="./resources/ar.svg" alt="img" style="width: 100%; height: 100%" /> 
+                  </span>
+                  <span>ArXiv</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/clovermini/AGSSP" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              
+              <!-- Dataset Link. -->
+              <!--  <span class="link-block">
+                <a href="https://huggingface.co/datasets/UCSC-VLAA/VLAA-Thinking" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fa-solidasasa fa-face-smiling-hands"></i> -->
+                   <!-- <img src="./resources/hg.svg" alt="img" style="width: 100%; height: 100%" />  -->
+                   <!-- <img src="./resources/thinking.webp" alt="img" style="width: 100%; height: 100%" /> 
+                  </span>
+                   <span>VLAA-Thinking Dataset</span>
+                  </a>
+                </span>   -->  
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <section class="hero teaser">
+  <div class="container">
+    <div class="hero-body", style="text-align: center;">
+      <img src="./resources/recap_front.jpg" alt="alt text"
+                        style="width: 50%; object-fit: cover; max-width:50%;"></a>
+      <h2 class="subtitle has-text-centered">
+        Examples of the original caption and our recaption in DataComp-1B, and the word distributions.
+      </h2>
+    </div>
+  </div>
+</section> -->
+
+<!-- <section class="section">
+  <div class="container ">
+    <div class="hero-body">
+      <center><h2 class="title is-3">Demo</h2></center>
+  <iframe src="https://laos-y-hqedit.hf.space" frameborder="0" width="100%" height="1000"></iframe>
+</div>
+</div>
+</section> -->
+
+
+
+<!-- Abstract. -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Pretrained models are commonly employed to improve finetuning performance in metallic surface defect detection, especially in data-scarce environments. However, models pretrained on ImageNet often underperform due to data distribution gaps and misaligned training objectives. To address this, we propose a novel method called Anomaly-Guided Self-Supervised Pretraining (AGSSP), which pretrains on a large industrial dataset containing 120,000 images. AGSSP adopts a two-stage framework: (1) anomaly map guided backbone pretraining, which integrates domain-specific knowledge into feature learning through anomaly maps, and (2) anomaly box guided detector pretraining, where pseudo-defect boxes derived from anomaly maps act as targets to guide detector training. Anomaly maps are generated using a knowledge enhanced anomaly detection method. Additionally, we present two small-scale, pixel-level labeled metallic surface defect datasets for validation. Extensive experiments demonstrate that AGSSP consistently enhances performance across various settings, achieving up to a 10% improvement in mAP@0.5 and 11.4% in mAP@0.5:0.95 compared to ImageNet-based models.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- / Abstract. -->
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Large-Scale Industrial Dataset (Pretraining)</h2>
+        <div class="content has-text-justified">
+          <!-- <center><img class="center" src="./assets/data_generation.png" width="100%"></center>  -->
+          <!-- <p>
+            <strong style="font-weight: 900">Pipeline Overview.</strong>
+            We propose a four-step procedure for data generation: <b>Captioning</b>, <b>Visual-Language CoT Generation</b>, <b>Answer Rewriting</b> and <b>Answer Verification</b>.          
+          </p> -->
+          <p>
+            <strong style="font-weight: 900">Dataset composition.</strong>
+            Half of the dataset is aggregated from 20 publicly available industrial surface defect datasets, including 
+            <a href="https://www.kaggle.com/datasets/nexuswho/aitex-fabric-image-database/">AITEX</a>, 
+            <a href="https://tianchi.aliyun.com/dataset/148297/">APDDD</a>, 
+            <a href="https://publikationen.bibliothek.kit.edu/1000133819/">BSD Cls</a>, 
+            <a href="https://github.com/2Obe/BSData/">BSData</a>, 
+            <a href="https://www.kaggle.com/datasets/thtuan/btad-beantech-anomaly-detection/">BTAD</a>, 
+            <a href="https://hci.iwr.uni-heidelberg.de/content/weakly-supervised-learning-industrial-optical-inspection/">DAGM2007</a>, 
+            <a href="https://drive.google.com/drive/folders/10OyPzvI3H6llCZBxKxFlKWt1Pw1tkMK1 /">DTD-Synthetic</a>, 
+            <a href="https://github.com/VDT-2048/CPANet/">FSSD-12</a>, 
+            <!-- <a href="https://github.com/lvxiaoming2019/GC10-DET-Metallic-Surface-Defect-Datasets/">GC10-DET</a>, -->
+            <a href="https://github.com/jsq0903/CR7-DET/">CR7-DET</a>,
+            <a href="https://www.vicos.si/resources/kolektorsdd/">KolektorSDD</a>, 
+            <a href="https://www.vicos.si/resources/kolektorsdd2/">KolektorSDD2</a>, 
+            <a href="https://github.com/abin24/Magnetic-tile-defect-datasets./">Magnetic Tile</a>, 
+            <a href="https://github.com/stepanje/MPDD/">MPDD</a>, 
+            <a href="https://github.com/successhaha/GTnet/">MSD Seg</a>, 
+            <a href="https://www.mvtec.com/company/research/datasets/mvtec-ad/">MVTec_AD</a>, 
+            <a href="https://github.com/DHW-Master/NEU_Seg/">NEU Seg</a>, 
+            <a href="https://drive.google.com/drive/folders/1cplcUBmgHfD82YQTWnn1dssK2Z_xRpjx/">road_crack_dataset</a>, 
+            <a href="http://icn.bjtu.edu.cn/visint/resources/RSDDs.aspx/">RSDDs</a>, 
+            <a href="https://www.kaggle.com/competitions/severstal-steel-defect-detection/">severstal-steel-defect-detection</a>, 
+            <a href="https://github.com/VincentHancoder/SSGD/">SSGD</a>.
+            <!-- <br> -->
+
+            The dataset's remaining portion comprises proprietary metallic surface data collected from 14 steel plants and production lines, encompassing unlabeled samples of multiple metallic substrates including aluminum plates, steel sheets/strips, pipes, and rails. 
+            Each facility contributed unique data, characterized by material diversity, acquisition variance, process variability, and equipment profiles.
+            While confidentiality restrictions prevent the full disclosure of the dataset, we provide representative samples to showcase its diversity, and all the pre-trained weights are publicly available in our <a href="https://github.com/clovermini/AGSSP/" target="_blank" rel="noopener">GitHub repository</a>.
+            
+            Our taxonomy further organizes the combined dataset (from 34 distinct sources) into 61 finely differentiated categories based on material classification and acquisition context.
+
+          </p>
+          
+          <center><img class="center" src="./assets/p1.png" width="100%"></center>
+          <!-- <center><img class="center" src="./assets/p2.png" width="100%"></center> -->
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3 has-text-centered">Metallic Surface Defect Datasets</h2>
+    <!-- <p class="has-text-centered">The first version consists of samples from the following datasets:</p> -->
+    <br>
+    <div class="table-container">
+      <table class="table is-striped is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Number of Images</th>
+            <th>Image Resolution</th>
+            <th>Defect Types</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://drive.google.com/file/d/1bNlp6_iMGSemdF1etWhYmnI7-GlNweWz/view?usp=drive_link">Casting Billet</a></td>
+            <td>1,060 (780 defective)</td>
+            <td>96×106 to 3,228×492</td>
+            <td>Scratch, Weld slag, Cutting opening, Water slag mark, Slag skin, Longitudinal crack</td>
+          </tr>
+          <tr>
+            <td><a href="https://drive.google.com/file/d/1nBL356q42ZRWYNa_QIYA25cz8kad7Ibd/view?usp=drive_link">Steel Pipe</a></td>
+            <td>1,227 (554 defective)</td>
+            <td>728×544</td>
+            <td>Warp, External fold, Wrinkle, Scratch</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <center><img class="center" src="./assets/datasets.png" width="80%"></center>
+    <center><img class="center" src="./assets/dataset2.png" width="80%"></center>
+    
+    <!-- <p class="has-text-justified">
+      <b>Dataset Statistics.</b> These datasets cover questions from different domains (math, general) and questions of different types (close-ended, open-ended). 
+      For datasets with duplicated images, we select unique images for higher diversity. <b>More data are on the way</b>.
+    </p> 
+    <p class="has-text-justified">
+      <strong>Data statistics of VLAA-Thinking</strong> We present the original volume of metadata (<span>#Original</span>), the data size after the distillation pipeline (<span>#Pipeline</span>), the size of sampled examples for SFT (<span>#Final SFT</span>) and RL (<span>#Final RL</span>), respectively. Note that we only use GeoQA170K with verifiable answers for the RL split.
+    </p> -->
+  </div>
+</section>
+
+
+
+
+
+      <section class="section">
+        <div class="container">
+          <h2 class="title is-3 has-text-centered">Representative Examples & Anomaly Text Prompts</h2>
+          <p class="has-text-justified">
+            Here, we provide a detailed demonstration of the anomaly text prompt generation process for the casting billet and steel pipe datasets. 
+            Specifically, we began by selecting a representative sample for each type of defect. 
+            This sample was then input into GPT-4o, where the model was tasked with locating and describing the defect in the image, providing reference descriptions of the defect's characteristics. 
+            In parallel, we incorporated expert knowledge gathered from industrial fieldwork (including insights from field workers and relevant professional books) that outlined the common characteristics of such defects. 
+            These two sources of information complemented each other: the GPT-4o model provided textual expressions of defect features, 
+            while the expert knowledge helped fill in the gaps by offering a broader understanding of common characteristics that might not be fully captured by the representative samples in specific scenarios. 
+            The final text prompts were then crafted through human judgment. During the anomaly detection phase, all potential defect types and their associated features were input to assess the current object.
+
+            Moreover, for the private dataset used in pretraining, we have showcased some sample data and their corresponding text prompts. 
+            It is important to note that these datasets are fully unlabeled. 
+            
+          </p>
+          <div class="tabs is-centered">
+            <ul>
+              <li class="is-active" onclick="showTab(event, 'pdf-a')"><a>Casting Billet</a></li>
+              <li onclick="showTab(event, 'pdf-b')"><a>Steel Pipe</a></li>
+              <li onclick="showTab(event, 'pdf-c')"><a>aluminum_plate</a></li>
+              <li onclick="showTab(event, 'pdf-d')"><a>aluminum_ingot</a></li>
+              <li onclick="showTab(event, 'pdf-e')"><a>aluminum_strip</a></li>
+              <li onclick="showTab(event, 'pdf-1')"><a>steel_plate</a></li>
+              <li onclick="showTab(event, 'pdf-2')"><a>cold_rolled_strip_steel</a></li>
+              <li onclick="showTab(event, 'pdf-3')"><a>hot_rolled_strip_annealing_picking</a></li>
+              <li onclick="showTab(event, 'pdf-4')"><a>hot_rolled_strip_steel</a></li>
+              <li onclick="showTab(event, 'pdf-5')"><a>medium_heavy_plate</a></li>
+              <li onclick="showTab(event, 'pdf-6')"><a>moderately_thick_plates</a></li>
+              <li onclick="showTab(event, 'pdf-7')"><a>steel_plate2</a></li>
+              <li onclick="showTab(event, 'pdf-8')"><a>pipeData</a></li>
+              <li onclick="showTab(event, 'pdf-9')"><a>steel_rail</a></li>
+              <li onclick="showTab(event, 'pdf-10')"><a>wide_thick_plate</a></li>
+              <li onclick="showTab(event, 'pdf-11')"><a>medium_plate</a></li>
+            </ul>
+          </div>
+          <div class="content has-text-centered">
+            <img id="pdf-a" class="pdf-preview" src="./assets/d1.png" width="100%">
+            <img id="pdf-b" class="pdf-preview is-hidden" src="./assets/d2.png" width="80%">
+            <img id="pdf-c" class="pdf-preview is-hidden" src="./assets/d3.png" width="100%">
+            <img id="pdf-d" class="pdf-preview is-hidden" src="./assets/d4.png" width="100%">
+            <img id="pdf-e" class="pdf-preview is-hidden" src="./assets/d5.png" width="100%">
+            <img id="pdf-1" class="pdf-preview is-hidden" src="./assets/d6.png" width="100%">
+            <img id="pdf-2" class="pdf-preview is-hidden" src="./assets/d7.png" width="100%">
+            <img id="pdf-3" class="pdf-preview is-hidden" src="./assets/d8.png" width="100%">
+            <img id="pdf-4" class="pdf-preview is-hidden" src="./assets/d9.png" width="100%">
+            <img id="pdf-5" class="pdf-preview is-hidden" src="./assets/d10.png" width="100%">
+            <img id="pdf-6" class="pdf-preview is-hidden" src="./assets/d11.png" width="100%">
+            <img id="pdf-7" class="pdf-preview is-hidden" src="./assets/d12.png" width="100%">
+            <img id="pdf-8" class="pdf-preview is-hidden" src="./assets/d13.png" width="100%">
+            <img id="pdf-9" class="pdf-preview is-hidden" src="./assets/d14.png" width="100%">
+            <img id="pdf-10" class="pdf-preview is-hidden" src="./assets/d15.png" width="100%">
+            <img id="pdf-11" class="pdf-preview is-hidden" src="./assets/d16.png" width="100%">
+
+          </div>
+        </div>
+      </section>
+      
+      <script>
+        function showTab(event, tabId) {
+          document.querySelectorAll('.pdf-preview').forEach(img => img.classList.add('is-hidden'));
+          document.getElementById(tabId).classList.remove('is-hidden');
+          
+          document.querySelectorAll('.tabs ul li').forEach(tab => tab.classList.remove('is-active'));
+          event.currentTarget.classList.add('is-active');
+        }
+      </script>
+      
+      <style>
+        .is-hidden {
+          display: none;
+        }
+        .tabs ul li a {
+          cursor: pointer;
+        }
+      </style>
+      
+
+            <!-- <section class="section">
+            <div class="container">
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                  <h2 class="title is-3">Acknowledge</h2>
+                  <div class="content has-text-justified">
+                    This work is partially supported by a gift from Adobe, TPU Research Cloud (TRC) program, Google Cloud Research Credits program, AWS Cloud Credit for Research program, Edinburgh International Data Facility (EIDF) and the Data-Driven Innovation Programme at the University of Edinburgh.
+                  </div>
+                </div>
+              </div>
+            </section> -->
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Anomaly-Guided Self-Supervised Pretraining (AGSSP)</h2>
+
+
+        <h3 class="title is-3 has-text-left" style="font-size: 1.5rem; margin-top: 50px;">Overview of the proposed framework</h3>
+        <div class="content has-text-justified">
+          <center><img class="center" src="./assets/main.png" width="100%"></center>
+          <p>
+            This framework is composed of two key phases: anomaly map guided backbone pretraining (b) and anomaly box guided detector pretraining 
+            (c). Using the Knowledge Enhanced Anomaly Detection algorithm (a), which incorporates detailed defect descriptions as prior knowledge, anomaly maps are generated. 
+            In the backbone pretraining phase, anomaly map information is transferred into the network via distillation loss. This process can be seamlessly combined with existing pretraining tasks. 
+            During the detector pretraining phase, the pretrained backbone is kept frozen, while the anomaly maps are used to generate pseudo-defect boxes. 
+            These pseudo-boxes are used for detector component pretraining within the object detection model.
+          </p>
+        </div>
+
+
+        </style>
+        <h3 class="title is-3 has-text-left" style="font-size: 1.5rem; margin-top: 50px;;">Performance</h3>
+        <div class="content has-text-justified">
+          <center><img class="center" src="./assets/results.png" width="100%"></center>
+          <!-- <p>
+            <strong style="font-weight: 900">Pipeline Overview.</strong>
+            We propose a four-step procedure for data generation: <b>Captioning</b>, <b>Visual-Language CoT Generation</b>, <b>Answer Rewriting</b> and <b>Answer Verification</b>.          
+          </p> -->
+          <p>
+            Experimental results across four downstream datasets demonstrate that AGSSP's pretraining framework—compatible with multiple backbone architectures, detection methods, and pretraining approaches—consistently outperforms baseline models pretrained on ImageNet and COCO.
+          </p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+    
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgement</h2>
+    <p class="has-text-justified">
+      We thank the Microsoft Accelerate Foundation Models Research Program for supporting our computing needs.
+    </p>
+  </div>
+</section> -->
+
+<!--<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+ @misc{vl-thinking2025,
+    title={VL-Thinking: An R1-Derived Visual Instruction Tuning Dataset for Thinkable LVLMs},
+    author={Hardy Chen and Haoqin Tu and Hui Liu and Xianfeng Tang and Xinya Du and Yuyin Zhou and Cihang Xie},
+    year = {2025},
+    publisher = {GitHub},
+    journal = {GitHub repository},
+    howpublished = {\url{https://github.com/UCSC-VLAA/VL-Thinking}},
+    } 
+    </code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Based on the following <a href="https://ucsc-vlaa.github.io/VLAA-Thinking/">template</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
